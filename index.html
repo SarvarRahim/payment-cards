@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main class="payment">
+        <div class="container">
+        <div class="pay">
+            <div class="btn-wrap">
+            <span class="btn-next"></span>
+            <span class="btn-next"></span>
+            <span class="btn-next"></span>
+        </div>
+            <h1 class="pay__title">Payment Method</h1>
+            <form action="#" method="POST">
+                <label class="card-group name-card">
+                <img  class="img-cards" src="img/visa.svg" alt="visa card logo" width="65" height="25">
+                <!-- <p class="name-card">Visa</p> -->
+                <input class="pay__input visually-hidden" type="radio" name="paycard" id="paycard" placeholder="VISA">
+                <span class="chek-card">Visa</span>
+            </label>
+
+            <label class="card-group name-card">
+                <img src="img/mastercard.svg" alt="master card logo" width="65" height="25">
+                <!-- <p class="name-card">Mastercard</p> -->
+                <input class="pay__input visually-hidden" type="radio" name="paycard" id="paycard" placeholder="MASTERCARD">
+                <span class="chek-card">Mastercard</span>
+            </label>
+
+            <label class="card-group name-card">
+                <img src="img/maestro.svg" alt="maestro card logo" width="65" height="25">
+                <!-- <p class="name-card">Maestro</p> -->
+                <input class="pay__input visually-hidden" type="radio" name="paycard" id="paycard" placeholder="MAesTRO">
+                <span class="chek-card">Maestro</span>
+            </label>
+
+                <button class="btn-step" type="submit">Next Step</button>
+            </form>
+        </div>
+    </div>
+    </main>
+</body>
+</html>

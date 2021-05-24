@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', 'Arial', sans-serif;
+    height: 100%;
+    background-image: url(../img/palma-bgc.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
+.container {
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.pay {
+    width: 400px;
+    margin-top: 100px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.btn-wrap {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-next {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: rgb(179, 178, 178);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: auto 0;
+    margin-left: 6px;
+    margin-top: 25px;
+}
+
+.btn-next:hover {
+    background-color: gray;
+}
+
+.pay__title {
+    display: block;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 27px;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid rgb(197, 197, 197);
+}
+
+.card-group {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid rgb(197, 197, 197);
+}
+
+.card-wrap:nth-child(3) {
+    border: none;
+}
+
+.name-card {
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 15px;
+    font-family: 'Roboto', 'Arial', sans-serif;
+    color: gray;
+}
+
+
+.btn-step {
+    width: 400px;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+    white-space: nowrap;
+    background-color: dodgerblue;
+    padding: 20px 130px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.btn-step::after {
+    content: "";
+    display: block;
+    width: 25px;
+    height: 25px;
+    margin-left: 8px;
+    background-repeat: no-repeat;
+    background-image: url("../img/arrow.svg");
+}
+
+.btn-step:active {
+    transform: rotate(0.16deg);
+}
+
+.chek-card {
+    flex-grow: 1;
+    display: flex;
+    padding-right: 20px;
+}
+
+.pay__input:checked ~ .chek-card {
+    color: #222;
+}
+
+.pay__input:checked + .chek-card::after {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/check.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right center;
+    margin-left: auto;
+}
+
