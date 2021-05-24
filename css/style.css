@@ -74,7 +74,7 @@ body {
     border-bottom: 2px solid rgb(197, 197, 197);
 }
 
-.card-wrap:nth-child(3) {
+.card-group:nth-child(3) {
     border: none;
 }
 
@@ -101,6 +101,7 @@ body {
     cursor: pointer;
     display: flex;
     align-items: center;
+    transition: transform 0.3s ease;
 }
 
 .btn-step::after {
@@ -114,7 +115,7 @@ body {
 }
 
 .btn-step:active {
-    transform: rotate(0.16deg);
+    transform: translateY(2px);
 }
 
 .chek-card {
